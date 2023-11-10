@@ -1,0 +1,173 @@
+* {
+    user-select: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(../img/background.jpg);
+    background-image: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+    content: "";
+    background-color: rgb(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+
+}
+
+.logo img {
+    height: 45px;
+    width: 167px;
+}
+
+header {
+    padding: 20px 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.login-body {
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 550px;
+    margin-left: 50%;
+    background-color: rgb(0, 0, 0, .75);
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+}
+
+h1 {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 0;
+}
+
+.login-body input:not(.entrar) {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.login-body input:not(.entrar):hover {
+    background-color: #444;
+}
+
+.input-box {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.entrar {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.entrar:hover {
+    background-color: #f1525a;
+}
+
+.support {
+    display: flex;
+    color: #b3b3b3;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.help a {
+    text-decoration: none;
+    color: #737373;
+}
+
+.help a:hover {
+    text-decoration: underline
+}
+
+.login-facebook {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #737373;
+}
+
+.login-facebook  .link {
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.login-facebook label {
+    color: #737373;
+
+}
+
+.login-signup {
+    color: #737373;
+    font-size: 16px;
+}
+
+.login-signup a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.login-signup a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    color: #737373;
+    font-size: 13px;
+}
+
+.terms a {
+    text-decoration: none;
+    color: #0071eb;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+#remember {
+    margin: 0;
+    margin-right: 5px;
+    padding: 0;
+    width: auto;
+    height: 13px;
+}
+
+#facebook-logo {
+    height: 20px;
+}
